@@ -5,31 +5,32 @@ import Countertops from "@mui/icons-material/Countertops";
 import Code from "@mui/icons-material/Code";
 import SportsEsports from "@mui/icons-material/SportsEsports";
 import type { ElementType } from "react";
+import { Colors, type TypeColor } from "./cardColors";
 
 export interface DomainProps {
-  color: string;
+  color: TypeColor;
   icon: ElementType;
 }
 
 export const Domains: Record<string, DomainProps> = {
   work: {
-    color: red[400],
+    color: Colors.FIRE,
     icon: LaptopMac,
   },
   learning: {
-    color: purple[400],
+    color: Colors.POISON,
     icon: School,
   },
   home: {
-    color: yellow[300],
+    color: Colors.ELECTRIC,
     icon: Countertops,
   },
   creative: {
-    color: green[400],
+    color: Colors.GRASS,
     icon: Code,
   },
   entertainment: {
-    color: blue[400],
+    color: Colors.WATER,
     icon: SportsEsports,
   },
 };

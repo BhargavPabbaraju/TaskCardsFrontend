@@ -1,4 +1,4 @@
-import DomainCard from "../components/card";
+import TaskCard from "../components/task_card";
 import { useTheme, styled } from "@mui/material/styles";
 import { Domains } from "../../utils/domain";
 
@@ -17,7 +17,7 @@ function CardsPage() {
   return (
     <StyledCardContainer>
       {Object.entries(Domains).map(([domainName, domain]) => (
-        <DomainCard domain={domain} key={domainName} domainName={domainName} />
+        <TaskCard domain={domain} key={domainName} domainName={domainName} />
       ))}
     </StyledCardContainer>
   );

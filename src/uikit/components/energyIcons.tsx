@@ -1,4 +1,3 @@
-import { styled, useTheme } from "@mui/material";
 import BatteryAlert from "@mui/icons-material/BatteryAlertTwoTone";
 import BatteryCharging20 from "@mui/icons-material/BatteryCharging20TwoTone";
 import BatteryCharging50 from "@mui/icons-material/BatteryCharging50TwoTone";
@@ -30,7 +29,6 @@ function HyperEnergyIcon() {
 }
 
 function EnergyIcons({ energy }: EnergyIconsProps) {
-  const theme = useTheme();
   const effectiveEnergy = energy ?? Math.floor(Math.random() * 5);
 
   switch (effectiveEnergy) {
